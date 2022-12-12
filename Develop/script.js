@@ -24,7 +24,7 @@ var mm = String(currentToday.getMonth() + 1).padStart(2, '0');
 var yyyy = currentToday.getFullYear();
 
 currentToday = mm + '/' + dd + '/' + yyyy;
-document.write(currentToday);
+document.write( currentToday);
 
 
 
