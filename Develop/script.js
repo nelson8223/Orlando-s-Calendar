@@ -8,10 +8,15 @@ $('.saveBtn').on( "click", function() {
   console.log(textValue)
 
 })
-const box = document.getElementById('time-block');
-console.log(box.getAttribute('past')); 
-box.setAttribute('past', 'new-future');
-console.log(box.getAttribute('time-block')); 
+
+$(".time-block").click(function(){
+  if ("past"==="present")addClass("future") 
+  else;
+  $("future").removeClass("past");
+  }
+  
+ 
+);
 
 var currentToday = new Date();
 var dd = String(currentToday.getDate()).padStart(2, '0');
