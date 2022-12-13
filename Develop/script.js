@@ -18,14 +18,9 @@ $(".time-block").click(function(){
  
 );
 
-var currentToday = new Date();
-var dd = String(currentToday.getDate()).padStart(2, '0');
-var mm = String(currentToday.getMonth() + 1).padStart(2, '0');
-var yyyy = currentToday.getFullYear();
 
-currentToday = mm + '/' + dd + '/' + yyyy;
-document.write( currentToday);
 
+$('#currentToday').text(dayjs().format('dddd, MMMM D, YYYY'));
 
 
 
